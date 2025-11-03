@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    color: #f4f4f4;
+    font-size: 30px;
+}
+
+.productos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.productos-contenedor .producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: calc(33.333% - 10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.productos-contenedor .producto:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.productos-contenedor .producto img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.productos-contenedor .producto h2 {
+    font-size: 22px;
+    margin: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.productos-contenedor .producto p {
+    font-size: 16px;
+    margin: 0 15px 15px 15px;
+    text-align: center;
+    color: #666;
+}
+
+.productos-contenedor .producto .precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 15px 15px 15px;
+    text-align: center;
+    color: #27ae60;
+}
+
+.productos-contenedor .producto .boton {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 15px 15px 15px;
+    padding: 10px;
+    background-color: #333;
+    color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.productos-contenedor .producto .boton:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .productos-contenedor {
+        max-width: 600px;
+    }
+    
+    .productos-contenedor .producto {
+        width: calc(50% - 8px);
+    }
+}
+
+@media (max-width: 480px) {
+    .productos-contenedor .producto {
+        width: 100%;
+    }
+}
