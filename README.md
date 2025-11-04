@@ -63,7 +63,7 @@ cd css-exercises/01-tarjeta-perfil
 ✅ CSS Flexbox
 ✅ Responsive design
 ✅ Efectos y animaciones
-⏳ CSS Grid
+✅ CSS Grid
 ⏳ JavaScript
 
 ## 👨‍💻 Autor
@@ -72,4 +72,4 @@ Cristian Mamani - Estudiante de Programación
 
 ---
 
-**Última actualización:** [03-11-2025]
+**Última actualización:** [04-11-2025]
